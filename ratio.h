@@ -1,11 +1,21 @@
 #include <string>
+#ifndef DEFNS
+#define DEFNS
+#include "defns.h"
+#endif
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <iomanip>
 
-class Ratio{
+class Ratio {
     private:
-        earnings* 
-        int length
+        earnings* earn;
+        int length;
     public:
-        Ratio();
+        Ratio(earnings* earnings, int length); //constructor
 
-        ~Ratio();
-}
+        void printRatios(int yearStart, int yearEnd);
+
+        ~Ratio(); //destructor
+};
